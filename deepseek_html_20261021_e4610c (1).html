@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f7fb">
+<title>SS Earning Trick — Discover Smart Earning Tricks</title>
+<meta name="description" content="Explore online earning tricks, apps, offers, games and useful resources in one place.">
+<link rel="icon" type="image/png" href="https://iili.io/nNQyl2V.png">
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  }catch(e){ document.documentElement.setAttribute('data-theme','light'); }
+})();
+</script>
+<style>
+:root{
+  --bg:#f6f7fb;
+  --bg-accent:radial-gradient(circle at 12% 0%,rgba(245,166,35,.14),transparent 45%),radial-gradient(circle at 88% 6%,rgba(99,102,241,.10),transparent 45%);
+  --surface:#ffffff;
+  --surface-2:#f1f4f9;
+  --text:#0e1525;
+  --muted:#5f6b85;
+  --border:#e4e9f2;
+  --accent:#f5a623;
+  --accent-2:#e08e00;
+  --accent-soft:#fff4d6;
+  --accent-text:#8a5a00;
+  --green:#10b981;
+  --green-soft:#e6f9f0;
+  --red:#ef4444;
+  --red-soft:#fdeaea;
+  --purple:#7c3aed;
+  --purple-soft:#f3eeff;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.05);
+  --shadow-md:0 4px 14px rgba(15,23,42,.07);
+  --shadow-lg:0 14px 44px rgba(15,23,42,.12);
+  --radius:18px;
+}
+[data-theme="dark"]{
+  --bg:#0a0e17;
+  --bg-accent:radial-gradient(circle at 12% 0%,rgba(251,191,36,.10),transparent 45%),radial-gradient(circle at 88% 6%,rgba(99,102,241,.10),transparent 45%);
+  --surface:#121826;
+  --surface-2:#0f1420;
+  --text:#eef2f9;
+  --muted:#94a3b8;
+  --border:#1e293b;
+  --accent:#fbbf24;
+  --accent-2:#f59e0b;
+  --accent-soft:#2a2412;
+  --accent-text:#fbbf24;
+  --green:#34d399;
+  --green-soft:#0e2a22;
+  --red:#f87171;
+  --red-soft:#2a1416;
+  --purple:#a78bfa;
+  --purple-soft:#1e1a33;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:0 4px 14px rgba(0,0,0,.5);
+  --shadow-lg:0 14px 44px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg-accent),var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  transition:background-color .3s ease,color .3s ease;
+}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+.wrap{width:min(1150px,calc(100% - 32px));margin:auto}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:30;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  transition:background-color .3s ease,border-color .3s ease;
+}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.3px}
+.brand-logo{
+  width:44px;height:44px;border-radius:13px;overflow:hidden;flex-shrink:0;
+  border:1px solid var(--border);box-shadow:var(--shadow-sm);background:var(--surface);
+}
+.brand-logo img{width:100%;height:100%;object-fit:cover;display:block}
+.brand-text{font-size:15px;line-height:1.1}
+.brand-text small{display:block;color:var(--muted);font-size:9.5px;letter-spacing:2px;margin-top:4px;font-weight:600}
+.nav-right{display:flex;align-items:center;gap:6px}
+.nav-right a{
+  padding:9px 14px;border-radius:10px;font-size:13.5px;font-weight:600;color:var(--muted);
+  transition:background-color .2s,color .2s;
+}
+.nav-right a:hover{background:var(--surface-2);color:var(--text)}
+.theme-toggle{
+  width:42px;height:42px;border-radius:12px;border:1px solid var(--border);
+  background:var(--surface);color:var(--text);cursor:pointer;
+  display:grid;place-items:center;margin-left:6px;box-shadow:var(--shadow-sm);
+  transition:background-color .2s,border-color .2s,transform .2s;
+}
+.theme-toggle:hover{background:var(--surface-2);transform:translateY(-1px)}
+.theme-toggle svg{width:19px;height:19px}
+.theme-toggle .icon-sun{display:none}
+[data-theme="dark"] .theme-toggle .icon-sun{display:block}
+[data-theme="dark"] .theme-toggle .icon-moon{display:none}
+
+/* ---------- Hero Card (Wapas add kiya gaya) ---------- */
+.hero-wrap{padding:38px 0 20px}
+.hero-panel{
+  background:var(--surface);border:1px solid var(--border);border-radius:26px;padding:32px;
+  box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
+}
+.hero-panel::before{
+  content:"";position:absolute;width:220px;height:220px;right:-70px;top:-80px;border-radius:50%;
+  background:var(--accent);opacity:.12;filter:blur(30px);
+}
+.panel-logo{
+  width:96px;height:96px;border-radius:26px;overflow:hidden;margin-bottom:18px;
+  border:1px solid var(--border);box-shadow:var(--shadow-md);background:var(--surface-2);
+  position:relative;
+}
+.panel-logo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-panel h2{font-size:22px;letter-spacing:-.4px;margin-bottom:6px}
+.hero-panel>p{color:var(--muted);font-size:13.5px;margin-bottom:22px}
+.panel-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ps{background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:14px 10px;text-align:center}
+.ps strong{display:block;font-size:22px;color:var(--accent-text);letter-spacing:-.5px}
+.ps span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700}
+
+/* ---------- Socials ---------- */
+.socials{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:12px 0 40px}
+.social{
+  display:flex;align-items:center;gap:13px;padding:14px 16px;background:var(--surface);
+  border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow-sm);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.social:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--accent)}
+.s-icon{
+  width:46px;height:46px;border-radius:13px;display:grid;place-items:center;flex-shrink:0;
+  background:#ffffff;border:1px solid var(--border);box-shadow:var(--shadow-sm);
+  padding:8px;overflow:hidden;
+}
+.s-icon svg{width:100%;height:100%;display:block}
+.s-text{flex:1;min-width:0}
+.s-text strong{display:block;font-size:13.5px;font-weight:700;letter-spacing:-.2px}
+.s-text small{display:block;color:var(--muted);font-size:11.5px;margin-top:2px}
+.s-arrow{color:var(--muted);font-size:14px;transition:transform .2s,color .2s}
+.social:hover .s-arrow{color:var(--accent);transform:translate(2px,-2px)}
+
+/* ---------- Catalog ---------- */
+.catalog{padding:0 0 70px}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.section-head h2{font-size:28px;letter-spacing:-1px;margin-bottom:6px}
+.section-head p{color:var(--muted);font-size:13.5px}
+
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.search{position:relative;flex:1;min-width:220px}
+.search .search-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px}
+.search input{
+  width:100%;padding:13px 16px 13px 42px;background:var(--surface);border:1px solid var(--border);
+  border-radius:12px;color:var(--text);outline:none;font-size:14px;box-shadow:var(--shadow-sm);
+  transition:border-color .2s,box-shadow .2s;
+}
+.search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 20%,transparent)}
+.toolbar select{
+  background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:12px;
+  padding:0 14px;min-width:150px;min-height:46px;outline:none;cursor:pointer;box-shadow:var(--shadow-sm);
+  transition:border-color .2s;
+}
+.toolbar select:focus{border-color:var(--accent)}
+
+.countline{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:12.5px;margin-bottom:18px;flex-wrap:wrap}
+.countline span:last-child{font-weight:500}
+
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px;display:flex;flex-direction:column;gap:12px;min-height:200px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--accent)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card-icon{
+  width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  font-size:19px;font-weight:800;background:var(--accent-soft);color:var(--accent-text);
+  border:1px solid color-mix(in srgb,var(--accent) 25%,transparent);
+}
+.pill{
+  display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;
+  padding:5px 10px;border-radius:99px;letter-spacing:.4px;text-transform:uppercase;white-space:nowrap;
+}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.pill.active{background:var(--green-soft);color:var(--green)}
+.pill.inactive{background:var(--red-soft);color:var(--red)}
+.card h3{font-size:16px;letter-spacing:-.3px;line-height:1.35;overflow-wrap:anywhere}
+.card p{font-size:13px;line-height:1.65;color:var(--muted);flex:1;overflow-wrap:anywhere}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:14px;border-top:1px solid var(--border);flex-wrap:wrap}
+.card-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.tag{
+  font-size:10.5px;font-weight:700;color:var(--muted);background:var(--surface-2);
+  border:1px solid var(--border);padding:6px 10px;border-radius:8px;letter-spacing:.3px;
+}
+.btn-open{
+  display:inline-flex;align-items:center;gap:5px;background:var(--accent);color:#1a1200;
+  font-weight:800;font-size:11.5px;padding:8px 13px;border-radius:9px;
+  transition:filter .2s,transform .2s;
+}
+.btn-open:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.btn-open.disabled{background:var(--surface-2);color:var(--muted);pointer-events:none;font-weight:600}
+
+.btn-video{
+  display:inline-flex;align-items:center;gap:6px;background:var(--purple-soft);color:var(--purple);
+  border:1px solid color-mix(in srgb,var(--purple) 30%,transparent);
+  font-weight:800;font-size:11.5px;padding:8px 12px;border-radius:9px;
+  transition:transform .2s,filter .2s;
+}
+.btn-video:hover{transform:translateY(-1px);filter:brightness(1.04)}
+.btn-video svg{width:13px;height:13px;flex-shrink:0}
+.btn-video.disabled{
+  background:var(--surface-2);color:var(--muted);
+  border-color:var(--border);cursor:not-allowed;pointer-events:none;
+  font-weight:600;
+}
+
+.empty{grid-column:1/-1;padding:48px 16px;text-align:center;border:1px dashed var(--border);border-radius:16px;color:var(--muted);background:var(--surface)}
+.empty strong{display:block;color:var(--text);margin-bottom:6px;font-size:15px}
+
+.pagination{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:30px;flex-wrap:wrap}
+.page-btn{
+  min-width:40px;height:40px;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:10px;cursor:pointer;font-weight:600;font-size:13px;
+  box-shadow:var(--shadow-sm);transition:background-color .2s,border-color .2s,color .2s;
+}
+.page-btn:hover{background:var(--surface-2)}
+.page-btn.current{background:var(--accent);border-color:var(--accent);color:#1a1200;font-weight:800}
+
+/* ---------- Footer ---------- */
+footer{border-top:1px solid var(--border);padding:28px 0 36px;color:var(--muted);font-size:12.5px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.foot strong{color:var(--text)}
+
+/* ---------- Responsive ---------- */
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .socials{grid-template-columns:1fr;gap:10px;}
+}
+@media(max-width:600px){
+  .wrap{width:calc(100% - 24px)}
+  .nav{height:66px}
+  .brand-text{font-size:13.5px}
+  .brand-logo{width:38px;height:38px;border-radius:11px}
+  .nav-right a{display:none}
+  .grid{grid-template-columns:1fr}
+  .toolbar select{flex:1;min-height:46px}
+  .section-head h2{font-size:23px}
+  .hero-panel{padding:24px}
+  .panel-logo{width:80px;height:80px;border-radius:20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="SS Earning Trick home">
+      <span class="brand-logo"><img src="https://iili.io/nNQyl2V.png" alt="SS Earning Trick logo"></span>
+      <span class="brand-text">SS Earning Trick<small>EARN · LEARN · GROW</small></span>
+    </a>
+    <div class="nav-right">
+      <a href="#tricks">Tricks</a>
+      <a href="#community">Community</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Wapas add kiya gaya Logo aur Stats wala Card -->
+  <section class="wrap hero-wrap">
+    <div class="hero-panel">
+      <div class="panel-logo"><img src="https://iili.io/nNQyl2V.png" alt="SS Earning Trick logo"></div>
+      <h2>SS Earning Trick</h2>
+      <p>Curated links, clear status, easy discovery.</p>
+      <div class="panel-stats">
+        <div class="ps"><strong id="totalStat">0</strong><span>Total</span></div>
+        <div class="ps"><strong id="activeStat">0</strong><span>Active</span></div>
+        <div class="ps"><strong>15</strong><span>Per page</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="community">
+    <div class="socials">
+      <a class="social" id="youtubeLink" href="#" target="_blank" rel="noopener">
+        <span class="s-icon">
+          <svg viewBox="0 0 24 24" role="img" aria-label="YouTube">
+            <path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8z"/>
+            <path fill="#ffffff" d="M9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/>
+          </svg>
+        </span>
+        <span class="s-text"><strong>YouTube Channel</strong><small>Videos & earning guides</small></span>
+        <span class="s-arrow">↗</span>
+      </a>
+      <a class="social" id="instagramLink" href="#" target="_blank" rel="noopener">
+        <span class="s-icon">
+          <svg viewBox="0 0 24 24" role="img" aria-label="Instagram">
+            <defs>
+              <linearGradient id="igGrad" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FEDA75"/>
+                <stop offset=".26" stop-color="#FA7E1E"/>
+                <stop offset=".52" stop-color="#D62976"/>
+                <stop offset=".76" stop-color="#962FBF"/>
+                <stop offset="1" stop-color="#4F5BD5"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igGrad)"/>
+            <circle cx="12" cy="12" r="4.3" fill="none" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="17.4" cy="6.6" r="1.15" fill="#ffffff"/>
+          </svg>
+        </span>
+        <span class="s-text"><strong>Instagram</strong><small>Updates & quick tips</small></span>
+        <span class="s-arrow">↗</span>
+      </a>
+      <a class="social" id="telegramLink" href="#" target="_blank" rel="noopener">
+        <span class="s-icon">
+          <svg viewBox="0 0 24 24" role="img" aria-label="Telegram">
+            <path fill="#26A5E4" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+        </span>
+        <span class="s-text"><strong>Telegram Channel</strong><small>Links & community updates</small></span>
+        <span class="s-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap catalog" id="tricks">
+    <div class="section-head">
+      <div>
+        <h2>Explore the tricks</h2>
+        <p>Search by name, category or description.</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="search">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search tricks… e.g. survey, games, offers" autocomplete="off">
+      </div>
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="all">All categories</option>
+        <option>Apps</option><option>Games</option><option>Tasks</option>
+        <option>Referral</option><option>Offers</option><option>Websites</option><option>Other</option>
+      </select>
+      <select id="statusFilter" aria-label="Filter by status">
+        <option value="all">All statuses</option>
+        <option value="active">Active only</option>
+        <option value="inactive">Deactivated only</option>
+      </select>
+    </div>
+    <div class="countline"><span id="resultsText">Showing tricks</span><span>15 tricks per page</span></div>
+    <div class="grid" id="trickGrid"></div>
+    <div class="pagination" id="pagination"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>SS Earning Trick</strong><br>Earn smart. Learn more. Grow steadily.</div>
+    <div>Only use links you trust. Earning results are not guaranteed.</div>
+  </div>
+</footer>
+
+<script>
+/* ================================================================
+   1) SOCIAL LINKS
+   ================================================================ */
+const SOCIAL_LINKS = {
+  youtube: "https://www.youtube.com/",
+  instagram: "https://www.instagram.com/",
+  telegram: "https://t.me/"
+};
+
+/* ================================================================
+   2) TRICKS LIST
+   ================================================================ */
+const TRICKS = [
+  {
+    id:"t1",
+    name:"Daily Reward Apps",
+    category:"Apps",
+    url:"https://example.com",
+    description:"Add your trusted daily reward app link here.",
+    status:"active",
+    video:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    id:"t2",
+    name:"Gaming Rewards",
+    category:"Games",
+    url:"https://example.com",
+    description:"Share a gaming rewards link with your visitors.",
+    status:"active",
+    video:""
+  },
+  {
+    id:"t3",
+    name:"Online Task Platform",
+    category:"Tasks",
+    url:"https://example.com",
+    description:"Add a task website and explain how it works.",
+    status:"active",
+    video:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    id:"t4",
+    name:"Referral Bonus",
+    category:"Referral",
+    url:"https://example.com",
+    description:"Add your referral or invite link here.",
+    status:"active",
+    video:""
+  },
+  {
+    id:"t5",
+    name:"Limited-Time Offer",
+    category:"Offers",
+    url:"https://example.com",
+    description:"Set status to inactive when this offer expires.",
+    status:"inactive",
+    video:""
+  }
+];
+
+/* ================================================================
+   3) THEME TOGGLE
+   ================================================================ */
+const root = document.documentElement;
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", () => {
+  const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  try{ localStorage.setItem("theme", next); }catch(e){}
+});
+
+/* ================================================================
+   4) RENDERING
+   ================================================================ */
+let page = 1;
+const $ = id => document.getElementById(id);
+
+function escapeHtml(v){
+  return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function safeUrl(raw){
+  try{
+    const u = new URL(raw);
+    return ["http:","https:"].includes(u.protocol) ? u.href : null;
+  }catch{ return null; }
+}
+function iconFor(cat){
+  return ({Apps:"▣",Games:"♟",Tasks:"✓",Referral:"↗",Offers:"✦",Websites:"◎",Other:"✧"})[cat] || "✧";
+}
+
+function filtered(){
+  const q = $("searchInput").value.trim().toLowerCase();
+  const cat = $("categoryFilter").value;
+  const status = $("statusFilter").value;
+  return TRICKS.filter(t =>
+    (!q || [t.name, t.category, t.description].join(" ").toLowerCase().includes(q)) &&
+    (cat === "all" || t.category === cat) &&
+    (status === "all" || t.status === status)
+  );
+}
+
+function render(){
+  const items = filtered();
+  const pages = Math.max(1, Math.ceil(items.length / 15));
+  page = Math.min(page, pages);
+  const start = (page - 1) * 15;
+  const shown = items.slice(start, start + 15);
+
+  $("totalStat").textContent = TRICKS.length;
+  $("activeStat").textContent = TRICKS.filter(t => t.status === "active").length;
+  $("resultsText").textContent = items.length
+    ? `Showing ${start + 1}–${Math.min(start + 15, items.length)} of ${items.length} tricks`
+    : "No tricks found";
+
+  const grid = $("trickGrid");
+  if (!shown.length){
+    grid.innerHTML = '<div class="empty"><strong>No tricks found</strong>Try another search or category filter.</div>';
+  } else {
+    grid.innerHTML = shown.map(t => {
+      const url = safeUrl(t.url);
+      const videoUrl = safeUrl(t.video);
+      const active = t.status === "active";
+
+      /* Video button — HAR card par dikhega */
+      const videoBtn = videoUrl
+        ? `<a class="btn-video" href="${escapeHtml(videoUrl)}" target="_blank" rel="noopener noreferrer">
+             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+             Watch Tutorial
+           </a>`
+        : `<span class="btn-video disabled" title="Video coming soon">
+             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+             Video coming soon
+           </span>`;
+
+      return `<article class="card">
+        <div class="card-top">
+          <span class="card-icon">${iconFor(t.category)}</span>
+          <span class="pill ${active ? "active" : "inactive"}">${active ? "Active" : "Deactivated"}</span>
+        </div>
+        <h3>${escapeHtml(t.name)}</h3>
+        <p>${escapeHtml(t.description || "No description added yet.")}</p>
+        <div class="card-foot">
+          <span class="tag">${escapeHtml(t.category || "Other")}</span>
+          <span class="card-actions">
+            ${videoBtn}
+            ${active && url
+              ? `<a class="btn-open" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open ↗</a>`
+              : `<span class="btn-open disabled">${active ? "Invalid link" : "Unavailable"}</span>`}
+          </span>
+        </div>
+      </article>`;
+    }).join("");
+  }
+
+  $("pagination").innerHTML = "";
+  for (let p = 1; p <= pages; p++){
+    const b = document.createElement("button");
+    b.className = "page-btn" + (p === page ? " current" : "");
+    b.textContent = p;
+    b.setAttribute("aria-label", "Page " + p);
+    b.onclick = () => {
+      page = p;
+      render();
+      $("tricks").scrollIntoView({behavior:"smooth"});
+    };
+    $("pagination").appendChild(b);
+  }
+}
+
+$("youtubeLink").href = SOCIAL_LINKS.youtube;
+$("instagramLink").href = SOCIAL_LINKS.instagram;
+$("telegramLink").href = SOCIAL_LINKS.telegram;
+
+$("searchInput").addEventListener("input", () => { page = 1; render(); });
+$("categoryFilter").addEventListener("change", () => { page = 1; render(); });
+$("statusFilter").addEventListener("change", () => { page = 1; render(); });
+
+render();
+</script>
+</body>
+</html>
